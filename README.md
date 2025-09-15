@@ -49,6 +49,7 @@ markReturned(LocalDate date)
 Getters/Setters
 
 core package
+
 Inventory.java → Concrete class
 Inner Class:
 
@@ -92,12 +93,16 @@ returnBook(String patronId, String isbn)
 searchBooks(SearchStrategy strategy, String query)
 
 patterns package
+
+
 observer/InventoryObserver.java → Interface
 Methods:
 
 void onLowStock(Book book, int availableCopies)
 
 observer/LowStockNotifier.java → Concrete class
+
+
 Implements: InventoryObserver
 
 Methods:
